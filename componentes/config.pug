@@ -1,0 +1,13 @@
+//- Variables globales
+	- var title = "Título principal";
+- var titles = ["Título principal", "Subtítulo 1", "Subtítulo 2" , "Subtítulo 3"];
+- var links = ["Acerca", "Noticias", "Contacto"];
+
+//- Mixins
+mixin caja(imagen, titulo, content)
+	.caja 
+		.caja__imagen: img(src="../imgs/"+imagen, alt="Prototipo de imagen")
+		.caja__contenido 
+			h3 #{titulo}
+			p #{content}
+//- end mixin

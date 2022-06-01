@@ -1,0 +1,13 @@
+include ./config.pug
+doctype html
+html(lang='en')
+	include ./head.pug
+	body
+		header 
+			h1 PLATZIGAMES 
+			if user 
+				a(href="#") Hola #{user}
+			else 
+				a(href="#").boton REGISTRO
+		block contenidos
+		include ./footer.pug

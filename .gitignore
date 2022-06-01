@@ -1,0 +1,6 @@
+## PDF###
+*.pdf
+
+#node
+node_modules
+*.json
